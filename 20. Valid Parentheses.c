@@ -108,14 +108,14 @@ int isValid(char* string) {
             case ')':
                 val = stackPop(&stack);
                 if (val != '(') {
-                destoryStack(&stack);
+                    destoryStack(&stack);
                     return 0;
                 }
                 break;
             case ']':
                 val = stackPop(&stack);
                 if (val != '[') {
-                destoryStack(&stack);
+                    destoryStack(&stack);
                     return 0;
                 }
                 break;
@@ -123,7 +123,7 @@ int isValid(char* string) {
                 val = stackPop(&stack);
                 if (val != '{') {
                     destoryStack(&stack);
-                return 0;
+                    return 0;
                 }
             break;
         }
