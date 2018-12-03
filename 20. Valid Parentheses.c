@@ -76,7 +76,7 @@ int stackCount(Stack *stack) {
     return (stack->_top - stack->_stack) / sizeof(StackNode);
 }
 
-StackNode stackPeakTop(Stack *stack) {
+StackNode stackPeekTop(Stack *stack) {
     return *(stack->_top - 1);
 }
 
